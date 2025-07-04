@@ -16,14 +16,29 @@ export const ToDoWrapper = () => {
     }])
     console.log(todos)
   }
+  const toggleComplete = id =>{
+    setTodos(todos.map(todo => todo.id === id ? {...todo, 
+      completed: !todo.completed} : todo))
+  }
+  const deleteTodo = id =>{
+    setTodos(todos.filter(todo=> todo.id!==id))
+  }
+  const editTodo = id =>{
+    setTodos(todos.map(todo => todo.id === id ? {...todo, 
+      isEditing: !todo.isEditing} : todo))
+  }
   return (
     <div className="TodoWrapper">
       <h1>Get things done!</h1>
       <TodoForm addTodo={addTodo} />
       {todos.map((todo, index) => (
-        <Todo task={todo} key={index} />
+        <Todo task={todo} key={index}
+        toggleComplete={toggleComplete}
+        deleteTodo={deleteTodo}
+        editTodo={editTodo} />
       ))}
       
     </div>
   )
 }
+//2540
