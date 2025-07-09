@@ -1,0 +1,73 @@
+body{
+    background: #050505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.App{
+    text-align: center;
+}
+h1{
+    color: #e5a100;
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+}
+.TodoWrapper {
+  margin-top: 1rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.TodoForm{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.todo-input{
+    color: #fff;
+    outline: none;
+    background: #171717;
+    /* border: 1px solid #8758ff; */
+    border: none;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-input::placeholder{
+    color: #fff;
+    background: #050505;
+}
+.todo-btn {
+  background: #050505;
+  color: #e5a100;
+  border: #050505;
+}
+.Todo{
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    background: #171717;
+    border-radius: 25px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+}
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor:pointer;
+}
+
+.completed {
+  color: #e5a100;
+  text-decoration: line-through;
+  cursor:pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  color: #e5a100;
+}
