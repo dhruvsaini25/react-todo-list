@@ -1,58 +1,82 @@
 body{
-    background: #050505;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: #050505;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .App{
-    text-align: center;
+  text-align: center;
 }
 h1{
-    color: #e5a100;
-    margin-bottom: 0.5rem;
-    font-size: 1.75rem;
+  color: #e5a100;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
 }
 .TodoWrapper {
   margin-top: 1rem;
   padding: 2rem;
   border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
 }
 .TodoForm{
-    width: 100%;
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: stretch;
+  gap:10px;
+  width: 100%;
+  /* max-width: 500px; */
+  
 }
 .todo-input{
-    color: #fff;
-    outline: none;
-    background: #171717;
-    /* border: 1px solid #8758ff; */
-    border: none;
-    padding: 0.75rem 1rem;
-    margin-bottom: 1rem;
-    border-radius: 25px;
-    justify-content: space-between;
-    align-items: center;
+  color: #fff;
+  outline: none;
+  background: #171717;
+  /* border: 1px solid #8758ff; */
+  border: none;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-items: center;
 }
 .todo-input::placeholder{
-    color: #fff;
-    background: #050505;
+  color: #fff;
+  background: #050505;
 }
 .todo-btn {
   background: #050505;
   color: #e5a100;
   border: #050505;
+  border-radius: 25px;
+  padding: 0.75rem 1.1rem;
+  /* padding: 12px 16px; */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+  align-items:end;
+  display: flex;
+  height: 100%;
+  /* width: 40%; */
+}
+.todo-btn:hover{
+  background-color: #171717;
 }
 .Todo{
-    color: #fff;
-    justify-content: space-between;
-    align-items: center;
-    background: #171717;
-    border-radius: 25px;
-    padding: 0.75rem 1rem;
-    margin-bottom: 1rem;
+  display:flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  background: #171717;
+  border-radius: 25px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
 }
+
 .fa-trash {
-  margin-left: 0.75rem;
+  margin-left: 1rem;
+  color: #e5a100;
 }
 
 .incompleted {

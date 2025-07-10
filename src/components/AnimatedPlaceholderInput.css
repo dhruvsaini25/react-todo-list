@@ -1,16 +1,19 @@
 .animated-placeholder {
   width: 100%;
-  padding: 12px;
-  font-size: 16px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
   background-color: #121212;
   color: #ffffff;
-  border: 1px solid #333;
+  border: 1px solid #121212; /*#333*/
   border-radius: 6px;
   outline: none;
   box-shadow: none;
+  flex: 1;
+  height: 100%;
 }
 
 .animated-placeholder::placeholder {
+  font-size: 1rem;
   transition: all 0.5s ease;
   border: none;
 }
