@@ -1,97 +1,158 @@
-body{
-  background: #050505;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.App{
-  text-align: center;
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-h1{
-  color: #e5a100;
-  margin-bottom: 0.5rem;
-  font-size: 1.75rem;
+#root {
+    height: 100%;
 }
+body {
+    background: #050505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #e5a100;
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+}
+
 .TodoWrapper {
-  margin-top: 1rem;
-  padding: 2rem;
-  border-radius: 5px;
-  max-width: 500px;
-  width: 100%;
+    background: #050505;
+    margin-top: 5rem;
+    padding: 2rem;
+    border-radius: 5px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
-.TodoForm{
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: stretch;
-  gap:10px;
-  width: 100%;
-  /* max-width: 500px; */
-  
+
+.TodoForm {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    width: 300px;
 }
-.todo-input{
-  color: #fff;
-  outline: none;
-  background: #171717;
-  /* border: 1px solid #8758ff; */
-  border: none;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-  border-radius: 25px;
-  justify-content: space-between;
-  align-items: center;
-}
-.todo-input::placeholder{
-  color: #fff;
-  background: #050505;
-}
+
+/* .todo-input {
+    outline: none;
+    background: none;
+    border: 1px solid #a25353;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 300px;
+    color: #fff;
+} */
+
+/* .todo-input::placeholder {
+    color: #ffffff4d;
+} */
+
 .todo-btn {
-  background: #050505;
-  color: #e5a100;
-  border: #050505;
-  border-radius: 25px;
-  padding: 0.75rem 1.1rem;
-  /* padding: 12px 16px; */
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  justify-content: center;
-  align-items:end;
-  display: flex;
-  height: 100%;
-  /* width: 40%; */
+    background: #171717;
+    color: #fff;
+    border: none;
+    padding: 0.55rem;
+    cursor: pointer;
+    border-radius: 15px;
+    height: auto;
 }
-.todo-btn:hover{
-  background-color: #171717;
+
+.Todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #171717;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    width: 300px;
 }
-.Todo{
-  display:flex;
-  color: #fff;
-  justify-content: space-between;
-  align-items: center;
-  background: #171717;
-  border-radius: 25px;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-  width: 100%;
+.todo-text {
+    flex: 1;
+    word-break: break-word;
+    padding-right: 0.75rem;
+}
+
+.todo-actions {
+    display: flex;
+    flex-direction: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 
 .fa-trash {
-  margin-left: 1rem;
-  color: #e5a100;
+    margin-left: 0.75rem;
+    color: #e5a100;
+    vertical-align: middle;
+    
+}
+.fa-pen-to-square{
+    color: #e5a100;
+    vertical-align: middle;
 }
 
+
 .incompleted {
-  color: #fff;
-  cursor:pointer;
+    color: #fff;
+    cursor: pointer;
 }
 
 .completed {
-  color: #e5a100;
-  text-decoration: line-through;
-  cursor:pointer;
+    color: #e5a100;
+    text-decoration: line-through;
+    cursor: pointer;
 }
 
 .edit-icon,
 .delete-icon {
-  cursor: pointer;
-  color: #e5a100;
+    cursor: pointer;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.3rem 0;
+    background: #050505;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 100;
+    border-top:none;
+}
+
+.footer a {
+    font-size: 1.5rem;
+    color: #e5a100;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer a:hover {
+    transform: scale(1.2);
+    color: #fff;
 }

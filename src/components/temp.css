@@ -1,0 +1,45 @@
+.animated-placeholder {
+  /* width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background-color: #121212;
+  color: #ffffff; */
+  /* border: 1px solid #121212; #333 */
+  /* border-radius: 6px;
+  outline: none;
+  box-shadow: none;
+  flex: 1;
+  height: 100%; */
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background-color: #171717;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  box-shadow: none;
+  /* height: auto; */
+  margin-bottom: 0;
+  height: 48px;       /* ✅ Force exact height */
+  line-height: 1;     /* Avoid default extra spacing */
+  margin: 0;
+}
+
+.animated-placeholder::placeholder {
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  border: none;
+}
+
+.fade-in::placeholder {
+  opacity: 1;
+  transform: translateY(0);
+  border: none;
+}
+
+.fade-out::placeholder {
+  opacity: 0;
+  transform: translateY(-15px);
+  border: none;
+}

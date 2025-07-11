@@ -1,5 +1,7 @@
 
 import React, {useState} from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { TodoForm } from './TodoForm'
 import { v4 as uuidv4} from 'uuid';
 import { Todo } from './Todo';
@@ -46,8 +48,17 @@ export const ToDoWrapper = () => {
         )
         
       ))}
-      
+      <footer className='footer'>
+        <a href="https://github.com/dhruvsaini25" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faLinkedinIn} />
+        </a>
+        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
+      </footer>
     </div>
   )
 }
-//2540
