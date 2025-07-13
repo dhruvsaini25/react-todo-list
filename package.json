@@ -2,7 +2,7 @@
   "name": "my-todo-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dhruvsaini25.github.io/react-todo-list"
+  "homepage": "https://dhruvsaini25.github.io/react-todo-list",
 
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
